@@ -1,0 +1,33 @@
+$main-color: black;
+$calculator-color: #cecece;
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 18px;
+  font-family: "Roboto Mono", monospace;
+  color: $main-color;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.function {
+  background-color: rgb(237 232 232) !important;
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.2) !important;
+  }
+}
+.equals {
+  background-color: rgba(108, 177, 233) !important;
+  &:hover,
+  &:active {
+    background-color: steelblue !important;
+    filter: brightness(120%) !important;
+  }
+}

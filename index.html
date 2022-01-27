@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <!-- css files -->
+    <link rel="stylesheet" href="Style/all.min.css" />
+    <link rel="stylesheet" href="Style/bootstrap.min.css" />
+    <link rel="stylesheet" href="Style/style.css" />
+    <!-- google fonts --><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&family=Roboto+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <main class="main">
+      <header class="header">
+        <div class="container">
+          <h1>Calculator</h1>
+        </div>
+      </header>
+      <section class="display">
+          <div class="container">
+              <div class="previous-value" id="previous-value"></div>
+              <input class="current-value" id="current-value" type="text" value="0" readonly></input>
+          </div>
+      </section>
+      <div class="calc-body">
+          <div class="container">
+              <div class="row">
+                  <div class="col">
+                      <button class="clearEntry function text-uppercase">ce</button>
+                  </div>
+                  <div class="col">
+                    <button class="clear function text-uppercase">c</button>
+                  </div>
+                  <div class="col">
+                    <button class="delete function" id="delete">
+                        <i class="fas fa-backspace"></i>
+                    </button>
+                  </div>
+                  <div class="col">
+                    <button class="operator divide function text-uppercase">/</button>
+                  </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                    <button class="number">7</button>
+                </div>
+                <div class="col">
+                  <button class="number">8</button>
+                </div>
+                <div class="col">
+                  <button class="number">9</button>
+                </div>
+                <div class="col">
+                  <button class="operator multiply function">*</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <button class="number">4</button>
+                </div>
+                <div class="col">
+                  <button class="number">5</button>
+                </div>
+                <div class="col">
+                  <button class="number">6</button>
+                </div>
+                <div class="col">
+                  <button class="operator subtract  function">-</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <button class="number">1</button>
+                </div>
+                <div class="col">
+                  <button class="number">2</button>
+                </div>
+                <div class="col">
+                  <button class="number">2</button>
+                </div>
+                <div class="col">
+                  <button class="operator plus function">+</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <button class="sign-change text-uppercase" id="sign-change">+/-</button>
+                </div>
+                <div class="col">
+                  <button class="number">0</button>
+                </div>
+                <div class="col">
+                  <button class="number">.</button>
+                </div>
+                <div class="col">
+                  <button class="equals function" id="equals">=</button>
+                </div>
+            </div>
+          </div>
+      </div>
+    </main>
+    <!-- js files -->
+    <script src="Js/popper.min.js"></script>
+    <script src="Js/bootstrap.min.js"></script>
+    <script src="Js/calculator.js"></script>
+  </body>
+</html>

@@ -1,0 +1,56 @@
+@use "utilities" as *;
+
+main.main {
+  background-color: $calculator-color;
+  border: {
+    top: {
+      left: {
+        radius: 6px;
+      }
+      right: {
+        radius: 6px;
+      }
+    }
+  }
+  &:focus-within {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  .display {
+    margin-bottom: 5px;
+    .container {
+      .previous-value {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        text-align: right;
+      }
+      .current-value {
+        font-size: 3rem;
+        font-weight: bold;
+        background-color: transparent;
+        text-align: right;
+        border: 0;
+        outline: 0;
+      }
+    }
+  }
+  .calc-body {
+    .row {
+      .col {
+        padding: 1px;
+        button {
+          width: 100%;
+          padding: 0.5rem;
+          font-size: 1.5rem;
+          background-color: whitesmoke;
+          border: none;
+          outline: none;
+          &:hover,
+          &:active {
+            background-color: rgba(255, 255, 255, 0.2);
+          }
+        }
+      }
+    }
+  }
+}
